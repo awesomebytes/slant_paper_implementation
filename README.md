@@ -19,6 +19,7 @@ compute_slant_matrices.m
 
 There is a test file called test_insert_watermark_and_extract.m which contains a execution of the
 implementation:
+```matlab
 % watermark to insert
 W = imread('watermark_image.jpg');
 % original image
@@ -29,6 +30,7 @@ alpha = 0.4; % the lower the better...
 [watermarked_img, secret_key] = insert_watermark(I, W, rng_seed, alpha);
 extracted_watermark = extract_watermark(watermarked_img, secret_key, rng_seed,
 alpha);
+```
 The implementation is divided in the function insert_watermark and the function
 extract_watermark.
 There is also a file called watermark_.m which was my developing file.
